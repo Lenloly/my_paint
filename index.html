@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <img src="images/2016-0320-Community_Logo.png" class="logo">
+</header>
+<section>
+    <div class="flexBox">
+        <div id="drawingTools">
+            <div id="colors">
+                <div class="one">
+                    <label><u>Couleur</u></label>
+                    <input type="color" id="color">
+                </div>
+                <br>
+                <div class="two">
+                    <label class="img"><u>images</u></label>
+                    <br>
+                    <input type="file" id="files">
+                </div>
+                <div class="for">
+                    <label class="myLab"><u>Taille</u></label>
+                    <select id="taile">
+                        <br>
+                        <option>5</option>
+                        <option>8</option>
+                        <option>10</option>
+                        <option>12</option>
+                        <option>15</option>
+                        <option>18</option>
+                        <option>22</option>
+                        <option>28</option>
+                        <option>40</option>
+                    </select>
+                </div>
+                <br>
+                <div class="three">
+                    <label><u>Outils</u></label>
+                    <img src="images/eraser.png" onclick="rubber()" alt="ceci est une gomme Mr l'aveugle" class="myImg">
+                    <img src="images/pencil.png" onclick="pencil()" alt="ceci est un crayon Mr l'aveugle" class="myImg">
+                    <img src="images/oval.png" onclick="rectangle()" alt="ceci est un crayon Mr l'aveugle" class="myImg">
+                    <img src="images/multi-tab.png" onclick="circles()" alt="ceci est un crayon Mr l'aveugle" class="myImg">
+                    <img src="images/circular-shape-silhouette.png" onclick="rectangle2()" alt="ceci est un crayon Mr l'aveugle" class="myImg">
+                    <img src="images/rounded-black-square-shape.png" onclick="circles2()" alt="ceci est un crayon Mr l'aveugle" class="myImg">
+                    <img src="images/substract.png" onclick="traits()" alt="ceci est un crayon Mr l'aveugle" class="myImg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sketch">
+        <canvas id="canvas" height="500px" width="800px"></canvas>
+    </div>
+    <div id="otherTools">
+        <button id="clearCanvas" onclick="clearCanvas()">Clean</button>
+        <button id="save" onclick="saveImage()">Save image</button>
+    </div>
+</section>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
